@@ -1,0 +1,161 @@
+body {
+  font-family:"Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: auto;
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+header {
+  background: linear-gradient(135deg, #543d3d, #2e1f1f);
+  position: sticky;
+  top: 0%;
+  color: #fffdfd;
+  box-shadow: 0 3px 10px #00000033;
+  padding: 1px 0;
+}
+
+header h2 {
+  font-size: 20px; 
+  letter-spacing: 0.5px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #9ea7e1;
+}
+
+.monthly-recap h3 {
+  margin: 25px 0 25px;
+  font-size: 30px;
+  border-left: 4px solid #da9b8c;
+  padding-left: 10px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr ; 
+  grid-template-rows: 1fr 1fr; 
+  max-width: 1000px; 
+  margin-top: 20px; 
+  padding: 20px;
+  gap: 20px;
+}
+
+.photo-item {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.photo-item:hover {
+  color: #9ea7e1;
+  transform: scale(1.10);
+  box-shadow: 0 8px 15px #00000033;
+}
+
+.photo-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+footer {
+  background-color: #543d3d;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 5px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffcbcb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #9ea7e1;
+}
+
+#backToTop {
+  position: fixed;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  display: none;  
+  background: #543d3d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 18px;
+  }
+  .social-icons a {
+    font-size: 18px;
+  }
+  .photo-grid {
+    grid-template-columns: 1fr; /* stack images in one column */
+  }
+  .monthly-recap h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    margin-top: 5px;
+  }
+  .monthly-recap h3 {
+    font-size: 20px;
+  }
+}
+
